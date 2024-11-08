@@ -1,72 +1,141 @@
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
+* {
+    margin: 0;
+    text-align: left;
+}
+p{
+    font-size: 3.2rem;
+}
+
+html {
+font-family: "Roboto", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    overflow: hidden;
+    aspect-ratio: 2/3;
+    gap:1rem;
+}
+
+.photo-container {
+    color: #fff;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 0 40px;
+    overflow: hidden;
+    background: #ec5164;
+    padding:0 1rem;
+}
+.name h1{
+    font-size: 3.2rem;
+}
+.name p{
+    font-size: 1.2rem;
+}
+svg{
+    height: 3.2rem;
+}
+
+.achievements {
+    height: 20%;
+}
+
+.rank-points {
+    height: 20%;
+}
+.stats{
+    display: flex;
+    position: relative;
+    height: 100%;
+    padding: 0 1rem;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+}
+
+.wol-img-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.stats img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 6rem;
+    top: 5rem;
+}
+.lower-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
     font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ec5164;
+    align-items: start;
+    padding-left: 4rem;
+}
+.lower-box p{
+    font-size: 3.2rem;
     font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
+}
+.lower-box label{
+    font-size: 1.2rem;
     font-weight: 400;
-    font-style: italic;
+}
+.rank-points{
+    margin-bottom: 2rem;
+}
+
+.element {
+    margin: 50px;
+   
+
+    box-shadow: 0px 0px 9px 4px #ea7629;
+    animation: glowShadow 1.5s linear infinite alternate;
   }
   
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
+  img {
+    width: 100%;
+    height: 100%;
   }
   
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
+  @keyframes glowShadow{
+    to {
+      box-shadow: 0px 0px 35px 15px #f8b88e;
+    }
   }
   
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
+  @keyframes glowImage{
+    to {
+      -webkit-filter: brightness(2);
+       filter: brightness(2);
+    }
   }
   
