@@ -27,9 +27,9 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 75vh;
     overflow: hidden;
-    aspect-ratio: 2/3;
+    aspect-ratio: 0.56;
     gap:1rem;
 }
 
@@ -72,6 +72,10 @@ svg{
 
 }
 
+.back{
+    font-size: 1.6rem;
+}
+
 .wol-img-wrapper{
     position: absolute;
     width: 100%;
@@ -80,7 +84,7 @@ svg{
 
 .stats img {
     object-fit: contain;
-    height: 100%;
+    height: 90%;
     width: 100%;
     position: absolute;
     left: 6rem;
@@ -124,4 +128,15 @@ svg{
       box-shadow: 0px 0px 35px 15px #e8c4ad;
     }
   }
-  
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.number {
+    font-weight: 700;
+}
